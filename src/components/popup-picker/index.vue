@@ -13,6 +13,7 @@
           <span class="vux-popup-picker-value vux-cell-value" v-if="!displayFormat && showName && value.length">{{value | value2name(data)}}</span>
           <span class="vux-popup-picker-value vux-cell-value" v-if="displayFormat && value.length">{{ displayFormat(value, value2name(value, data)) }}</span>
           <span v-if="!value.length && placeholder" v-text="placeholder" class="vux-popup-picker-placeholder vux-cell-placeholder"></span>
+          <x-icon style="vertical-align:middle;" type="ios-arrow-down" size="17"></x-icon>
         </div>
       </div>
       <div class="weui-cell__ft">
